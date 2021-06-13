@@ -1,3 +1,15 @@
 .InfoCard {
   padding: 24px;
+  position: relative;
+
+  p {
+    margin-top: 24px;
+    margin-bottom: 16px;
+  }
+
+  .infoData {
+    span + span {
+      margin-left: 45px;
+    }
+  }
 }

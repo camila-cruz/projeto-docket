@@ -1,11 +1,11 @@
 import React from 'react';
 // import './index.scss';
 
-export default function Text({ tag, children }) {
+export default function Text({ tag, children, ...props }) {
   const TextTag = `${tag}`;
   
   return (
-    <TextTag>
+    <TextTag {...props}>
       {children}
     </TextTag>
   )
