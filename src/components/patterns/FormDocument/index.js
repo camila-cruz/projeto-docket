@@ -1,6 +1,6 @@
 import React from 'react';
 import TextField from '../../commons/TextField';
-import Box from '../../foundation/Box';
+import Box, { BoxHeader } from '../../foundation/Box';
 import Text from '../../foundation/Text';
 import './index.scss';
 
@@ -23,9 +23,11 @@ function FormSection({ children }) {
 export default function FormDocument() {
   return (
     <Box className="FormDocument">
-      <Text tag="h4">
-        Adicionar documentos ao pedido
-      </Text>
+      <BoxHeader>
+        <Text tag="h4">
+          Adicionar documentos ao pedido
+        </Text>
+      </BoxHeader>
 
       <form>
         <FormGroup obrigatory>

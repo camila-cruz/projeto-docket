@@ -8,3 +8,19 @@ export default function Box({ children, className }) {
     </div>
   )
 }
+
+export function BoxHeader({ children }) {
+  return (
+    <div className="BoxHeader">
+      {children}
+    </div>
+  )
+}
+
+export function BoxFooter({ children }) {
+  return (
+    <div className="BoxFooter">
+      {children}
+    </div>
+  )
+}
