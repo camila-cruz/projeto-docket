@@ -2,3 +2,32 @@
   width: 100%;
   max-width: 530px;
 }
+
+.FormGroup {
+  margin-top: 24px;
+  
+  input {
+    margin-top: 8px;
+  }
+
+  &.obrigatory {
+    label:after {
+      content: '*';
+      color: red;
+    }
+  }
+}
+
+.FormSection {
+  display: flex;
+  justify-content: space-between;
+
+  div {
+    width: 100%;
+  }
+
+  div + div {
+    max-width: 130px;
+    margin-left: 24px;
+  }
+}

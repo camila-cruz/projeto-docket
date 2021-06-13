@@ -5,4 +5,8 @@
 
   display: block;
   width: 100%;
+
+  &::placeholder {
+    color: #D5D5D5;
+  }
 }
