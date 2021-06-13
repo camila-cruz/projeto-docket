@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../commons/Button';
 import TextField from '../../commons/TextField';
 import Box, { BoxHeader } from '../../foundation/Box';
 import Text from '../../foundation/Text';
@@ -50,7 +51,7 @@ export default function FormDocument() {
           <TextField type="text" placeholder="Digite aqui" />
         </FormGroup>
         
-        <Text tag="h4" className="subtitle">Dados do cartório</Text>
+        <Text tag="h4">Dados do cartório</Text>
 
         <FormGroup obrigatory>
           <Text tag="label">CEP: </Text>
@@ -78,6 +79,10 @@ export default function FormDocument() {
             <TextField type="text" placeholder="Digite aqui" />
           </FormGroup>
         </FormSection>
+
+        <Button type="submit">
+          Criar documento
+        </Button>
       </form>
     </Box>
   )

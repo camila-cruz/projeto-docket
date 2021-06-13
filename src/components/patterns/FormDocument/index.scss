@@ -1,6 +1,10 @@
 .FormDocument {
   width: 100%;
   max-width: 530px;
+
+  .FormGroup + h4 {
+    margin-top: 28px;
+  }
 }
 
 .FormGroup {
